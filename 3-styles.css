@@ -1,0 +1,51 @@
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.menu-open-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-line {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 8px;
+}
+
+.menu-item {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  color: red;
+  text-align: center;
+  font-size: 32px;
+  line-height: 60px;
+  display: none;
+}
+
+.menu-open:checked + .menu-open-button {
+  background-color: white;
+  color: red;
+}
+
+.menu-open:checked ~ .menu-item {
+  display: block;
+}
+
+.menu-item:hover {
+  background-color: red;
+  color: white;
+}
